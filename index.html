@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>JQuery Cheat Sheet</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+  <center><h1>JQuery Cheat Sheet</h1></center>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Add/Replace Content inside existing element</h4><p>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn" id="addContentBtn">Add</button>
+    <button class="btn" id="replaceContentBtn">Replace</button>
+  </div>
+  <div class="col-sm-4">
+    <p id="addContentText"></p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Replace/Remove a DOM Element</h4><p>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn" id="replaceElementBtn">Replace</button>
+    <button class="btn" id="removeElementBtn">Remove</button>
+  </div>
+  <div class="col-sm-4">
+    <p id="addElementText">If you remove this you will delete this element and its ID and replace will not work</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Hide/Show/Toggle Content</h4><p>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn" id="hidebtn">Hide</button>
+    <button class="btn" id="showbtn">Show</button>
+    <button class="btn" id="togglebtn">Toggle</button>
+  </div>
+  <div class="col-sm-4">
+    <p id="textToHide">Now you see me!</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Modifying Content</h4></p>
+    <p>... also disable the button and chain with css. Checkout the JS for more details. :)</p>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn" id="appendButton">Append</button>
+    <button class="btn" id="prependButton">Prepend</button>
+    <button class="btn" id="addBeforeButton">Add Before</button>
+    <button class="btn" id="addAfterButton">Add After</button>
+  </div>
+  <div class="col-sm-4">
+    <p id="modifyContentText">Some text.</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Hover</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <P id="hovertext">Hover over me</p>
+  </div>
+  <div class="col-sm-4">
+    <p id="p6">I will hide when you hover over the text</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Display an Overlay</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <button class="trigger btn">Toggle</button>
+    <button class="trigger btn">Fade</button>
+    <button class="trigger btn">Slide</button>
+  </div>
+  <div class="col-sm-4">
+    <section class="overlay">
+      <p id="overlayText"></p>
+      <button class="trigger">Close</button>
+    </section>
+    <p>Click the buttons to display an overlay using Toggle, Fade or Slide</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Style Content</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <button id="styleContentBtn" class="btn">Click me</button>
+  </div>
+  <div class="col-sm-4">
+    <P id="styleContentText">This text will get a different CSS style</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Toggle Style Class</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <button id="styleClassBtn" class="btn">Click me</button>
+  </div>
+  <div class="col-sm-4">
+    <P id="styleClassText">This uses toggleClass to change the CSS class</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Target HTML Tags</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <button id="targetTagBtn" class="btn">Click me</button>
+  </div>
+  <div class="col-sm-4">
+    <P>Toggle style class of all &lt;h4&gt; tags on the page</p>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Target Specific Elements</h4></p>
+    <p>Look at the javascript to see how the elements were targeted</p>
+  </div>
+  <div class="col-sm-2">
+    <button id="targetSubelementBtn" class="btn">Click me</button>
+  </div>
+  <div class="col-sm-6">
+    <div id="subelement">
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, <em>consectetur</em><a href=""> adipisicing </a> elit, <strong>sed do </strong> eiusmod tempor incididunt, <strong>eiusmod tempor</strong> incididunt</p>.
+    <hr>
+    <ol id="orderedList1">
+      <li name="name_attr">List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ol>
+    <hr>
+    <input type="text" id="inputTextBox"></input>
+    <hr>
+    <p><a href="http://www.google.com">Google Link</a></p>
+    <hr>
+    <p><a href="http://www.amazon.co.uk">Amazon Link</a></p>
+    <hr>
+    <img src="img/puppy.jpeg" alt="puppy" class="resize"/>
+    <hr>
+    <table class="table" id="myTable">
+      <tr>
+        <th>Title1</th><th>Title2</th>
+      </tr>
+      <tbody id="tableData"> <!-- Id placed here so headers are not included-->
+      <tr>
+        <td>cell1</td><td>cell2</td>
+      </tr>
+      <tr>
+        <td>cell3</td><td>cell4</td>
+      </tr>
+      <tr>
+        <td>cell5</td><td>cell6</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Using Contains and NOT</h4></p>
+  </div>
+  <div class="col-sm-4">
+    <button id="usingContainsBtn" class="btn">Contains "and"</button>
+    <br><br>
+    <button id="usingNotBtn" class="btn">Does not contain "and"</button>
+  </div>
+  <div class="col-sm-4">
+    <ol id="orderedList2">
+      <li>List item 1</li>
+      <li>another</li>
+      <li>and another</li>
+    </ol>
+  </div>
+  </div>
+
+  <hr>
+  <div class="row">
+  <div class="col-sm-4">
+    <p><h4>Using Has</h4></p>
+    <p>Target &lt;p&gt; tag that "has" an &lt;i&gt; within it </p>
+  </div>
+  <div class="col-sm-4">
+    <button id="usingHasBtn" class="btn">Click me</button>
+  </div>
+  <div class="col-sm-4">
+    <p>This paragraph does not have an &lt;i&gt; in it</p>
+    <p>... but this <i>one</i> does!<p>
+  </div>
+  </div>
+
+
+</div>
+
+  <!-- Load JS scripts, note that JQuery must go first and we are loading from a CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
