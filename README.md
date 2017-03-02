@@ -1,2 +1,2 @@
 # JQuery
-All things JQuery related
+A JQuery Cheat-Sheet I made to learn JQuery
